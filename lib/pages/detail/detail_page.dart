@@ -44,7 +44,8 @@ class DetailPage extends StatelessWidget {
                   AnimatedTextKit(
                     repeatForever: true,
                     animatedTexts: [
-                      TyperAnimatedText('Ha Noi City',
+                      TyperAnimatedText(
+                        '${context.read<WeatherProvider>().nameCity} City',
                           textStyle: const TextStyle(
                             color: Colors.white,
                             fontSize: 20,
